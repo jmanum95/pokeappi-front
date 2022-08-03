@@ -16,20 +16,38 @@ function validate (input, nameList) {
     else if (!input.attack) {
         errors.attack = "Attack is required"
     }
+    else if (input.attack < 1 || input.attack > 100) {
+        errors.attack = "Attack points must be between 1 and 100"
+    }
     else if (!input.defense) {
         errors.defense = "Defense is required"
+    }
+    else if (input.defense < 1 || input.defense > 100) {
+        errors.defense = "Defense points must be between 1 and 100"
     }
     else if (!input.hp) {
         errors.hp = "HP is required"
     }
+    else if (input.hp < 1 || input.hp > 100) {
+        errors.hp = "HP points must be between 1 and 100"
+    }
     else if (!input.speed) {
         errors.speed = "Speed is required"
+    }
+    else if (input.speed < 1 || input.speed > 100) {
+        errors.speed = "Speed points must be between 1 and 100"
     }
     else if (!input.weight) {
         errors.weight = "Weight is required"
     }
+    else if (input.weight < 1 || input.weight > 10000) {
+        errors.weight = "Weight must be between 1 and 10000"
+    }
     else if (!input.height) {
         errors.height = "Height is required"
+    }
+    else if (input.attack < 1 || input.attack > 10000) {
+        errors.height = "Height must be between 1 and 10000"
     }
     return errors
 }
@@ -134,7 +152,7 @@ export function PokemonCreate () {
                     <input
                     type="text"
                     autoComplete="off"
-                    value= {input.name}
+                    value= {input.name.toLowerCase()}
                     name="name"
                     placeholder="Name..."
                     onChange={(e) => handleChange(e)}
@@ -144,7 +162,7 @@ export function PokemonCreate () {
                     )}
                 </div>
                 <div>
-                    <label>Image : </label>
+                    <label>Image (must be a url): </label>
                     <input
                     type="text"
                     value= {input.img}

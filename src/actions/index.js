@@ -36,7 +36,7 @@ export function filterByAtributte(payload) {
 
 export function searchPokemons (name) {
     return async function (dispatch) {
-        var json = await axios.get("https://poke-appi.herokuapp.com/pokemons?name=" + name)
+        var json = await axios.get("https://poke-appi.herokuapp.com/pokemons?name=" + name.toLowerCase())
         if (json.data.length < 1) alert ("no poke found")
         return dispatch({
             type: "SEARCH_POKEMONS",
@@ -56,7 +56,7 @@ export function getDetail (id) {
 }
 
     export function postPokemon(payload) {
-        return async function (dispatch) {
+        return async function () {
             var json = await axios.post("https://poke-appi.herokuapp.com/pokemons", payload)
             return json
         }
