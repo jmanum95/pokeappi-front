@@ -1,0 +1,24 @@
+
+.navbar {
+    margin: 0 0 1% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0 20px rgb(150, 150, 150);
+    color: white;
+    align-items: center;
+}
+
+.linkdiv a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.linkdiv {
+    margin: 0 3%;
+}
+
+

@@ -1,0 +1,13 @@
+
+.logo img{
+    animation: logomove 5s linear infinite;
+}
+
+@keyframes logomove {
+    from {transform: rotate(0deg);}
+    50% {transform: scale(100%);}
+    55% {transform: scale(110%);}
+    60% {transform: scale(100%);}
+    80% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }

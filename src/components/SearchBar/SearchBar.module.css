@@ -1,0 +1,23 @@
+
+
+.searchbar input {
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0 20px rgb(150, 150, 150);
+    color: white;
+    font-weight: bold;
+}
+
+.searchbar input::placeholder{
+    color: white;
+    font-weight: bold;
+}
+
+.searchbar button {
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(7px);
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,45 @@
+
+.detailedcard {
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(7px);
+      box-shadow: 0 0 20px rgb(150, 150, 150);
+      margin: 10% 20%;
+      padding: 1%;
+      color: white;
+    }
+
+.card img {
+  align-self: center;
+  max-height: 25%;
+  max-width: 25%;
+  width: 25%;
+  height: 25%;
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.backbutton {
+  transition: .2s;
+  display: flex;
+  padding: 1%;
+  background-color: rgb(65, 57, 212);
+  color: white;
+  border-radius: 10%;
+  font-weight: bold;
+  border-style: none;
+  box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.backbutton:hover {
+  transition: .2s;
+  background-color: rgb(31, 20, 237);
+  transform: scale(110%);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}

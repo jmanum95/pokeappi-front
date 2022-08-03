@@ -1,0 +1,22 @@
+
+.landing h1 {
+    font-size: 8em;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 10px 10px 0 rgb(255, 0, 0);
+}
+
+.landing div {
+    display: inline-block;
+    transform: translateY(25%) scale(200%);
+}
+
+@media (max-width: 1000px) {
+    .landing h1 {
+        font-size: 2em;
+    }
+    
+    .landing div {
+        display: inline-block;
+        transform: translateY(25%) scale(150%);
+    }
+}
