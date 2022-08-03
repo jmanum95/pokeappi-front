@@ -17,9 +17,7 @@
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
   }
-
-
-
+  
   .img {
     width: 100%;
   }
@@ -43,19 +41,6 @@
 
   @media (max-width: 1000px) {
 
-    .card h2 {
-      display: none;
-    }
 
-    .card h4 {
-      display: none;
-    }
-
-    .attordef {
-      max-height: 10px;
-      max-width: 10px;
-      width: 10px;
-      height: 10px;
-    }
 
   }
