@@ -17,7 +17,7 @@
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
   }
-  
+
   .img {
     width: 100%;
   }
@@ -40,7 +40,9 @@
   }
 
   @media (max-width: 1000px) {
-
-
-
+    
+    .card {
+      max-width: 30%;
+      width: 30%;
+    }
   }

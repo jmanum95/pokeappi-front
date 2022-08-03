@@ -4,11 +4,3 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-
-
-@media (max-width: 1000px) {
-
-    .cards {
-        flex-wrap: nowrap;
-    }
-}
