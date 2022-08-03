@@ -18,7 +18,7 @@ export default function Pages({ pokemonsPerPage, allPokemons, pages}){
                 {pageNumbers && pageNumbers.map(number =>(
                     <li key={number}>
                     <p onClick={() => {pages(number); SetPageNum(number)}}
-                    className={pageNum === number ? styles.active : styles.inactive}>{number}</p>
+                    className={pageNum === number ? styles.active : pageNum === number+1 || pageNum === number-1 ? styles.side : styles.inactive}>{number}</p>
                     </li>
                     ))}
                 <li key="forw"><p onClick={() => {if(pageNum < pageNumbers.length) pages(pageNum + 1); if(pageNum < pageNumbers.length) SetPageNum(pageNum + 1)}}
