@@ -111,6 +111,7 @@ export function PokemonCreate () {
 
     function handleSubmit(e){
         e.preventDefault()
+        input.name = input.name.toLowerCase()
         dispatch(postPokemon(input))
         alert("Pokemon created succesfully")
         setInput({
@@ -152,7 +153,7 @@ export function PokemonCreate () {
                     <input
                     type="text"
                     autoComplete="off"
-                    value= {input.name.toLowerCase()}
+                    value= {input.name}
                     name="name"
                     placeholder="Name..."
                     onChange={(e) => handleChange(e)}
