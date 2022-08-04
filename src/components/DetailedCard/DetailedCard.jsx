@@ -29,7 +29,7 @@ export default function Card(props) {
                         <div className={styles.card}>
                             <img src={myPokemon.sprite || myPokemon.img} alt="📸 not found"></img>
                             <div>
-                                <h2>Wheight : {myPokemon.weight}</h2>
+                                <h2>Weight : {myPokemon.weight}</h2>
                                 <h2>Height : {myPokemon.height}</h2>
                                 <h2>Attack: {myPokemon.attack}</h2>
                                 <h2>Defense: {myPokemon.defense}</h2>
