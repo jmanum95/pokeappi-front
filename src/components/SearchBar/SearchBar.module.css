@@ -1,6 +1,7 @@
 
 
 .searchbar input {
+    margin-top: 1%;
     padding: 1%;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(7px);
@@ -15,6 +16,7 @@
 }
 
 .searchbar button {
+    margin-top: 1%;
     padding: 1%;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(7px);
