@@ -4,7 +4,7 @@ const url = process.env.BACK_URL;
 
 export function getPokemons() {
   return async function (dispatch) {
-    var json = await axios.get("https://poke-appi.herokuapp.com/pokemons");
+    var json = await axios.get(url + "/pokemons");
     return dispatch({
       type: "GET_ALL_POKEMONS",
       payload: json.data,
@@ -14,7 +14,7 @@ export function getPokemons() {
 
 export function getTypes() {
   return async function (dispatch) {
-    var json = await axios.get("https://poke-appi.herokuapp.com/types");
+    var json = await axios.get(url + "/types");
     return dispatch({
       type: "GET_TYPES",
       payload: json.data,
@@ -38,9 +38,7 @@ export function filterByAtributte(payload) {
 
 export function searchPokemons(name) {
   return async function (dispatch) {
-    var json = await axios.get(
-      "https://poke-appi.herokuapp.com/pokemons?name=" + name.toLowerCase()
-    );
+    var json = await axios.get(url + "/pokemons?name=" + name.toLowerCase());
     if (json.data.length < 1) alert("no poke found");
     return dispatch({
       type: "SEARCH_POKEMONS",
@@ -51,9 +49,7 @@ export function searchPokemons(name) {
 
 export function getDetail(id) {
   return async function (dispatch) {
-    var json = await axios.get(
-      "https://poke-appi.herokuapp.com/pokemons/" + id
-    );
+    var json = await axios.get(url + "/pokemons/" + id);
     return dispatch({
       type: "GET_DETAIL",
       payload: json.data,
@@ -63,10 +59,7 @@ export function getDetail(id) {
 
 export function postPokemon(payload) {
   return async function () {
-    var json = await axios.post(
-      "https://poke-appi.herokuapp.com/pokemons",
-      payload
-    );
+    var json = await axios.post(url + "/pokemons", payload);
     return json;
   };
 }
