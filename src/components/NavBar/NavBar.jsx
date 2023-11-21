@@ -24,7 +24,7 @@ export default function NavBar() {
             </div>
             <div className={styles.linkdiv}>
                 <Link to="/home/create">
-                    Create your pokemon   
+                    Create pokemon   
                 </Link>
             </div>
         </div>

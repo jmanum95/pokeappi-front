@@ -4,16 +4,15 @@
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(7px);
     box-shadow: 0 0 20px rgb(150, 150, 150);
-    margin: 1%;
-    max-width: 10%;
-    width: 10%;
+    max-width: 15rem;
+    width: 15rem;
     padding: 0 2% 2% 2%;
     color: white;
   }
 
   .card:hover {
     transition: .2s;
-    transform: scale(110%);
+    transform: scale(105%);
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
   }
@@ -40,9 +39,8 @@
   }
 
   @media (max-width: 1000px) {
-    
     .card {
-      max-width: 30%;
-      width: 30%;
+      max-width: 90%;
+      width: 90%;
     }
   }
