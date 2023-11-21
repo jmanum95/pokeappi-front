@@ -1,6 +1,5 @@
 import axios from "axios";
-
-const url = process.env.BACK_URL;
+const url = "https://pokeappi-back-production.up.railway.app";
 
 export function getPokemons() {
   return async function (dispatch) {

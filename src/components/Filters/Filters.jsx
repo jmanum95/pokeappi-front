@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import { getTypes, filterByType, filterByAtributte} from "../../actions/index"
+import { getTypes, filterByType, filterByAtributte} from "../../redux/actions/index";
 import styles from "./Filters.module.css"
 
 export default function Filters({refreshFilter}) {

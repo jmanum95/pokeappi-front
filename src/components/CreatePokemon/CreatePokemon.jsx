@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getTypes, getPokemons, postPokemon } from "../../actions/index";
+import { getTypes, getPokemons, postPokemon } from "../../redux/actions/index";
 import NavBar from "../NavBar/NavBar"
 import styles from "./CreatePokemon.module.css"
 
@@ -52,7 +52,7 @@ function validate (input, nameList) {
     return errors
 }
 
-export function PokemonCreate () {
+export default function PokemonCreate () {
 
     const dispatch = useDispatch()
     const allTypes = useSelector((state) => state.types)

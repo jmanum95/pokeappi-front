@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getDetail, resetDetails } from "../../actions/index";
+import { getDetail, resetDetails } from "../../redux/actions/index";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../Logo/Logo";

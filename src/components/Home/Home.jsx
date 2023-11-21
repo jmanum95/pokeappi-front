@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect} from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import {getPokemons} from "../../actions/index"
+import {getPokemons} from "../../redux/actions/index";
 import Card from "../Card/Card";
 import NavBar from "../NavBar/NavBar";
 import Pages from "../Pages/Pages";

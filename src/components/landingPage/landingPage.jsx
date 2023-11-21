@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useDispatch } from 'react-redux';
-import {getPokemons} from "../../actions/index"
+import {getPokemons} from "../../redux/actions/index";
 import Logo from "../Logo/Logo";
 import { Link } from "react-router-dom";
 import styles from "./landingPage.module.css"
