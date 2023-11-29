@@ -21,6 +21,7 @@ export default function rootReducer(state = initialState, action) {
         types: action.payload,
       };
 
+      
     case "FILTER_BY_TYPE":
       action.payload === "all"
         ? (state.pokemons = state.pokemonsCopy)
