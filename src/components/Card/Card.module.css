@@ -1,46 +1,44 @@
-
 .card {
-    transition: .2s;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(7px);
-    box-shadow: 0 0 20px rgb(150, 150, 150);
-    max-width: 15rem;
-    width: 15rem;
-    padding: 0 2% 2% 2%;
-    color: white;
-  }
+  transition: 0.2s;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0 20px rgb(150, 150, 150);
+  max-width: 15rem;
+  width: 15rem;
+  padding: 2%;
+  color: white;
+  border-radius: 15px;
+}
 
-  .card:hover {
-    transition: .2s;
-    transform: scale(105%);
-    background-color: rgba(255, 255, 255, 0.5);
-    color: black;
-  }
+.card:hover {
+  transition: 0.2s;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
 
-  .img {
-    width: 100%;
-  }
+.img {
+  width: 100%;
+}
 
-  .attordeffdiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    font-weight: bold;
-    margin: 5%;
-  }
+.attordeffdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: bold;
+  margin: 5%;
+}
 
+.attordef {
+  max-height: 30px;
+  max-width: 30px;
+  width: 30px;
+  height: 30px;
+}
 
-  .attordef {
-    max-height: 30px;
-    max-width: 30px;
-    width: 30px;
-    height: 30px;
+@media (max-width: 1000px) {
+  .card {
+    max-width: 90%;
+    width: 90%;
   }
-
-  @media (max-width: 1000px) {
-    .card {
-      max-width: 90%;
-      width: 90%;
-    }
-  }
+}

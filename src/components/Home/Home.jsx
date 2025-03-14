@@ -14,7 +14,7 @@ export default function Home() {
   const allPokemons = useSelector((state) => state.pokemons);
   const [, setRender] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [pokemonsPerPage] = useState(12);
+  const [pokemonsPerPage] = useState(10);
   const indexOfLastPokemon = currentPage * pokemonsPerPage;
   const indexOfFirstPokemon = indexOfLastPokemon - pokemonsPerPage;
   const currentPokemons = allPokemons.slice(
@@ -38,12 +38,12 @@ export default function Home() {
   return allPokemons.length ? (
     <>
       <NavBar />
-      <Filters refreshFilter={refreshFilter} />
       <Pages
         pokemonsPerPage={pokemonsPerPage}
         allPokemons={allPokemons.length}
         pages={pages}
       />
+      <Filters refreshFilter={refreshFilter} />
       <div className={styles.cards}>
         {currentPokemons.map((p) => {
           return (

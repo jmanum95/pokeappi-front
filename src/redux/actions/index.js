@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = "https://pokeappi-back-production.up.railway.app";
+const url = import.meta.env.VITE_BACKEND_URL;
 
 export function getPokemons() {
   return async function (dispatch) {

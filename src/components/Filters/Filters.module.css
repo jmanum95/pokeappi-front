@@ -1,29 +1,29 @@
-
-
 .allfilters {
-    padding: 1%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(7px);
-    color: white;
-    align-items: center;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(7px);
+  color: white;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .allfilters h3 {
-    margin: 0 3%;
+  margin: 0 3%;
 }
 
 .allfilters span {
-    margin: 0 3%;
-    font-weight: bold;
+  margin: 0 3%;
+  font-weight: bold;
 }
 
 .allfilters select {
-    padding: 5% 5%;
-    border-radius: 5%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-weight: bold;
+  padding: 5% 5%;
+  border-radius: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
 }
